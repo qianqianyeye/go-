@@ -17,10 +17,10 @@ func InitDB(flag bool) {
 	//SqlDB, err = gorm.Open("mysql", "SaasSH:mengdao+1ssh@tcp(119.23.219.245:8001)/SassDatabaseDev?charset=utf8")
 	if flag {
 		webgo.Debug("使用线上数据库%s","...")
-		SqlDB, err = gorm.Open("mysql", "SaasSH:mengdao+1ssh@tcp(119.23.219.245:8001)/SassDatabase?charset=utf8&parseTime=True&loc=Local")
+		SqlDB, err = gorm.Open("mysql", "")
 	}else{
 		webgo.Debug("使用线下数据库%s","...")
-		SqlDB, err = gorm.Open("mysql", "SaasSH:mengdao+1ssh@tcp(119.23.219.245:8001)/SassDatabaseDev?charset=utf8&parseTime=True&loc=Local")
+		SqlDB, err = gorm.Open("mysql", "")
 	}
 	SqlDB.LogMode(true)
 	SqlDB.DB().SetMaxOpenConns(1000)
