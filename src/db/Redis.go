@@ -15,19 +15,19 @@ func InitRedis(flag bool){
 		luck := redis.NewClient(
 			&redis.Options{
 				Addr:     "119.23.219.245:8000",
-				Password: "4%CPpOoUPML0&SMa", // no password set
+				Password: "", // no password set
 				DB:       4,                  // use default DB)
 			})
 		sass := redis.NewClient(
 			&redis.Options{
 				Addr:     "119.23.219.245:8000",
-				Password: "4%CPpOoUPML0&SMa", // no password set
+				Password: "", // no password set
 				DB:      1,                 // use default DB)
 			})
 		claw := redis.NewClient(
 			&redis.Options{
 				Addr:     "119.23.219.245:8000",
-				Password: "4%CPpOoUPML0&SMa", // no password set
+				Password: "", // no password set
 				DB:       2,                 // use default DB)
 			})
 		s = append(s, luck)
@@ -37,19 +37,19 @@ func InitRedis(flag bool){
 		luck := redis.NewClient(
 			&redis.Options{
 				Addr:     "119.23.219.245:8000",
-				Password: "4%CPpOoUPML0&SMa", // no password set
+				Password: "", // no password set
 				DB:    13   ,                  // use default DB)
 			})
 		sass := redis.NewClient(
 			&redis.Options{
 				Addr:     "119.23.219.245:8000",
-				Password: "4%CPpOoUPML0&SMa", // no password set
+				Password: "", // no password set
 				DB:       14,                 // use default DB)
 			})
 		claw := redis.NewClient(
 			&redis.Options{
 				Addr:     "119.23.219.245:8000",
-				Password: "4%CPpOoUPML0&SMa", // no password set
+				Password: "", // no password set
 				DB:       10,                 // use default DB)
 			})
 		s = append(s, luck)
